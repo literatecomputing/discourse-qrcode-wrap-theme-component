@@ -1,5 +1,5 @@
 {
-s  "name": "QR Code Inserter",
+  "name": "QR Code Inserter",
   "component": true,
   "authors": "Jay Pfaffman",
   "about_url": "https://github.com/literatecomputing/discourse-qrcode-theme-component",

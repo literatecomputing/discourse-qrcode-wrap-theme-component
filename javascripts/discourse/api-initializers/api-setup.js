@@ -2,7 +2,7 @@ import { apiInitializer } from "discourse/lib/api";
 import loadScript from "discourse/lib/load-script";
 import I18n from "I18n";
 
-async function applyQrcode(element, key = "composer") {
+async function applyQrcode(element) {
   const qrcodes = element.querySelectorAll(".d-wrap[data-wrap=qrcode]");
   if (!qrcodes.length) {
     return;
@@ -26,7 +26,7 @@ async function applyQrcode(element, key = "composer") {
 
 export default apiInitializer("0.11.1", (api) => {
   const { iconNode } = require("discourse-common/lib/icon-library");
-  let qrcode_icon = iconNode("qrcode");
+  iconNode("qrcode");
 
   const currentLocale = I18n.currentLocale();
   // I18n.translations[currentLocale].js.qrcode_button_title = I18n.t(themePrefix("composer_footnote_button_title"));
@@ -47,7 +47,7 @@ export default apiInitializer("0.11.1", (api) => {
     },
   });
 
-  api.addToolbarPopupMenuOptionsCallback((controller) => {
+  api.addToolbarPopupMenuOptionsCallback(() => {
     return {
       icon: "qrcode",
       label: "qrcode_button_title",

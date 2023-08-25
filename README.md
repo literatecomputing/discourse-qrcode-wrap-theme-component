@@ -10,4 +10,6 @@ and will render a QR Code. If you leave `url=` blank, it will use the current pa
 
 It seems that due to limitations of the library you can have only one QR Code per post.
 
-Uses code from https://davidshimjs.github.io/qrcodejs/
+Uses code from https://davidshimjs.github.io/qrcodejs/.
+
+Thanks to @falco and the [discourse-mermaid-theme-component](https://github.com/discourse/discourse-mermaid-theme-component) for inspiration and Best Practices.
