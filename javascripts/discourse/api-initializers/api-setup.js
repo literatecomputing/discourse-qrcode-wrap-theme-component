@@ -16,6 +16,7 @@ async function applyQrcode(element) {
     const url = qrcode.getAttribute("data-url")
       ? qrcode.getAttribute("data-url")
       : window.location.href;
+    /*eslint no-new: "error"*/
     new window.QRCode(qr, url);
     let node = document.createTextNode(url);
 
