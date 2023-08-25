@@ -1,8 +1,8 @@
 {
-  "name": "TODO",
+  "name": "discourse-qrcode-theme-component",
   "version": "0.0.1",
-  "repository": "TODO",
-  "author": "Discourse",
+  "repository": "https://github.com/literatecomputing/discourse-qrcode-theme-component",
+  "author": "pfaffman",
   "license": "MIT",
   "devDependencies": {
     "eslint-config-discourse": "^3.2.0"
