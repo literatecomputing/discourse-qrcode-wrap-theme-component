@@ -13,3 +13,6 @@ It seems that due to limitations of the library you can have only one QR Code pe
 Uses code from https://davidshimjs.github.io/qrcodejs/.
 
 Thanks to @falco and the [discourse-mermaid-theme-component](https://github.com/discourse/discourse-mermaid-theme-component) for inspiration and Best Practices.
+
+See https://github.com/literatecomputing/discourse-qrcode-theme-component which has the QR Code text in a code block rather than a `[wrap]`. That version is more rubust and recommended, but this version serves as an example for how to manipulate a `[wrap]` block in a theme component.
+
